@@ -1,0 +1,116 @@
+Three stage in Git :
+1.Working  directory.
+2.Staging  Area.
+3.Git Repository.
+
+basic command:-
+
+1. git add --a : to put all file in  staging area.
+
+2. git log : to see the previous commit history.
+
+3. rm -rf .git :- To remove the repository .
+
+4. git clone : git clone "github project url" It is used to download the clone of project.
+
+5. touch "File name":-It is used to create file like log etc.
+
+6. .gitignore file :- is used to ignore some waste file by putting the name of waste file in gitignore file.
+
+7. git diff :- is used to compare between working directory and staging area.
+
+8. git diff --staged : is used to compare between previous commit and your present staging area.
+
+9. git commit -a -m "Change the index.js":-skipping the staging area.you directly want to commit.one point to be noted that
+untracked file cannot directly commit.firstly you will will have to track that file.
+
+10. if you rename the file and fire the git status then git will say you deleted the file nd add one more file.when you staged
+the file then git will identify that you have renamed the file.
+
+11. git rm "File name":It is used to Remove the any file from git commnad.
+
+12. git mv first.txt first_rename.txt : It is used to rename any file from git and put that file automatically in staging area.
+
+13. git rm --cached "File name" :-It is used to untracked the track file.This command is  mostly used because At a certain point 
+of time,you relized that You want to ignore the tracked file.you will put the tracked file name in .gitignore but directly 
+It will not work so You will have to first untracked that file then put the name of that file in .gitignore.
+
+14. git log -p :It will show the changes with commit log.
+
+15. git log -p 3 : It will show the 3 commit with changes which line is add or remove.
+
+16. git log --stat: will give the brief summary.
+
+17. git log --pretty=oneline : It will see the all commit in one line.It is used to print all the commits easily.
+
+18. git log --pretty=short : It will show the message and author.
+
+19. git log --pretty=full : It will show the message,author and committer.
+
+
+<Author is the person who create the file and Commit is the person who changes the file>
+
+20. git log --since=2.days : It is used to filter out the data according to time.
+
+21. git restore --staged "File name" : It is used to unstaged file from the staged.
+
+22. git checkout -- text3.txt : If you cahnge any file and saved the file.Suddenly you relize you have  mistakely do this.
+You can restore the file from previous commit by using this command.
+23. git checkout -f : To restore the working directory from previous commit.If you do the wrong changes in differen
+different files.Now you want to back to previous commit then You can use this command.
+
+----------------------------------------------------------------------------------------------
+
+24. git remote -v :It will give the two url of remote(From github) for push and fetch the code.
+
+
+25. //Concept of alias
+
+    It is used to shortened the command
+   git config --global alias.st status  : we have changed the status word to st.Now we can use the command 
+   'git st' Now it will return the status
+-------------------------------------------------------------------------------------------------------------
+
+Branching concept and Merging:-
+
+26. git checkout -b "New branch name":- to create new branch from master.
+
+27. git checkout master :- to switch in master branch.
+
+28. git branch : to show all branches.
+
+29. git merge "branch name" :- to merge the branch with master.
+
+30. git branch -v : It will show all the branches,commit hash and commit message of branch.
+
+31. git branch --merged: It will show already merge branches.
+
+32. git branch -d "File name" :It will delete the branch but it will show error nd will say to conver -d to -D in command.
+
+33. git branch --no-merged: It will show no merge branches.
+
+-------------------------------------------------------------------------------------------------------------
+
+34. two type of branches in git :-
+
+    1. Long running branches.
+    2. Topic branches .
+
+35. Branches cannot be directly push on remotely.You will have to push explicitly by going into particular branch then
+    execute git push origin "branch name"
+
+36. git push -d origin "branch name":-to remove the branches from github repository.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
